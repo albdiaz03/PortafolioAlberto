@@ -577,6 +577,39 @@ article p {
   }
 }
 
+.credentials-toggle {
+  margin-top: 0.8rem;
+  text-align: center;
+}
+
+.credentials-link {
+  font-size: 0.8rem;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.credentials-link:hover {
+  color: #000;
+}
+
+.credentials-box {
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  color: #333;
+  line-height: 1.4;
+
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+
+.credentials-box.active {
+  max-height: 300px;
+  opacity: 1;
+}
 /* CONTACT */
 
 #contact {

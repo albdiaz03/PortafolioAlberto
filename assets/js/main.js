@@ -27,3 +27,17 @@ function scrollToTop() {
     behavior: "smooth",
   });
 }
+
+// Credentials Blazor
+function toggleCreds() {
+  const box = document.getElementById("credsBox");
+  box.classList.toggle("active");
+}
+
+// Try Api
+function toggleApiHelp() {
+  const box = document.getElementById("apiHelpBox");
+  box.classList.toggle("active");
+}
+
+

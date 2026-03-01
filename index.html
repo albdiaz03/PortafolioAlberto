@@ -63,13 +63,13 @@
             src="./assets/img/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="location.href='https://www.linkedin.com/in/alberto-diaz-castillo-120198339/'"
           />
           <img
             src="./assets/img/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
+            onclick="location.href='https://github.com/albdiaz03'"
           />
         </div>
       </div>
@@ -460,109 +460,119 @@
 </section>
 
 
-    <section id="projects">
-      <p class="section__text__p1">Conoce mis</p>
-      <h1 class="title">Proyectos</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/img/project-1.png"
-                alt="Captura de Sistema ABSS"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Sistema de Inscripciones ABSS
-            </h2>
-            <p class="project-description">
-              Plataforma para gestionar traspasos de jugadores y registros de
-              temporada en tiempo real. Integra APIs externas y validación
-              automatizada.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/usuario/abss-inscripciones'"
-              >
-                🔗 Código en GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://abss-demo.vercel.app'"
-              >
-                🌐 Ver Demo
-              </button>
-            </div>
-          </div>
+<section id="projects">
+  <p class="section__text__p1">Conoce mis</p>
+  <h1 class="title">Proyectos</h1>
 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/img/api.png"
-                alt="Captura de Sistema ABSS"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Integracion Softland Smartpanel Api
-            </h2>
-            <p class="project-description">
-              API REST desarrollada con ASP.NET Core, implementando autenticación y autorización con JWT.
-              Incluye middleware personalizado para manejo global de errores, inyección de dependencias, servicios estructurados por capas y documentación interactiva con Swagger.
-              Diseñada bajo una arquitectura limpia orientada a escalabilidad y mantenimiento.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/albdiaz03/SmartPanelGuiasApi'"
-              >
-                🔗 Código en GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://smartpanelguiasapi.onrender.com/swagger/index.html'"
-              >
-                🌐 Ver Demo
-              </button>
-            </div>
-          </div>
+  <div class="experience-details-container">
+    <div class="about-containers">
 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/img/blazorr.png"
-                alt="Captura de Sistema ABSS"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              SmartPanel Blazor
-            </h2>
-            <p class="project-description">
-              Aplicación desarrollada con Blazor WebAssembly, implementando una arquitectura cliente-servidor conectada a una API REST.
-              Incluye autenticación mediante JWT, control de roles y consumo seguro de endpoints protegidos.
-              La interfaz fue estructurada en componentes reutilizables, aplicando buenas prácticas de organización y separación de responsabilidades.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/albdiaz03/SmartPanelGuiasBlazor'"
-              >
-                🔗 Código en GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://smartpanelguiasblazor.onrender.com/login'"
-              >
-                🌐 Ver Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      <!-- CARD API -->
+      <div class="details-container color-container">
+  <div class="article-container">
+    <img
+      src="./assets/img/api.png"
+      alt="Captura API"
+      class="project-img"
+    />
+  </div>
+
+  <h2 class="experience-sub-title project-title">
+    Integracion Softland Smartpanel Api
+  </h2>
+
+  <p class="project-description">
+    API REST desarrollada con ASP.NET Core, implementando autenticación y autorización con JWT.
+    Incluye middleware personalizado para manejo global de errores,
+    inyección de dependencias y documentación con Swagger.
+  </p>
+
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://github.com/albdiaz03/SmartPanelGuiasApi'"
+    >
+      🔗 Código en GitHub
+    </button>
+
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://smartpanelguiasapi.onrender.com/swagger/index.html'"
+    >
+      🌐 Ver Demo
+    </button>
+  </div>
+
+  <!-- 🔑 INSTRUCCIONES API -->
+  <div class="credentials-toggle">
+    <span onclick="toggleApiHelp()" class="credentials-link">
+      🔑 Cómo probar la API
+    </span>
+
+    <div id="apiHelpBox" class="credentials-box">
+      <div><strong>1.</strong> Ejecutar <code>/login</code></div>
+      <div><strong>2.</strong> Usar:</div>
+      <div>Correo: <strong>test@test.cl</strong></div>
+      <div>Contraseña: <strong>admin</strong></div>
+      <div><strong>3.</strong> Copiar el token JWT</div>
+      <div><strong>4.</strong> Click en <strong>Authorize</strong></div>
+      <div><strong>5.</strong> Pegar: <code>Bearer TU_TOKEN</code></div>
+    </div>
+  </div>
+</div>
+
+      <!-- CARD BLAZOR -->
+      <div class="details-container color-container">
+  <div class="article-container">
+    <img
+      src="./assets/img/blazorr.png"
+      alt="Captura Blazor"
+      class="project-img"
+    />
+  </div>
+
+  <h2 class="experience-sub-title project-title">
+    SmartPanel Blazor
+  </h2>
+
+  <p class="project-description">
+    Aplicación desarrollada con Blazor WebAssembly conectada a una API REST.
+    Implementa autenticación JWT, control de roles y componentes reutilizables.
+  </p>
+
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://github.com/albdiaz03/SmartPanelGuiasBlazor'"
+    >
+      🔗 Código en GitHub
+    </button>
+
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://smartpanelguiasblazor.onrender.com/login'"
+    >
+      🌐 Ver Demo
+    </button>
+  </div>
+
+  <!-- 🔑 CREDENCIALES DEMO -->
+  <div class="credentials-toggle">
+  <span onclick="toggleCreds()" class="credentials-link">
+    🔑 Ver credenciales de prueba
+  </span>
+
+  <div id="credsBox" class="credentials-box">
+    <div><strong>Correo:</strong> test@test.cl</div>
+    <div><strong>Contraseña:</strong> admin</div>
+  </div>
+</div>
+</div>
+
+    </div>
+  </div>
+</section>
+
 
     <section id="contact">
       <p class="section__text__p1">Ponte en contacto</p>
